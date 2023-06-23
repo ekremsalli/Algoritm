@@ -123,4 +123,19 @@ public class StringUtil {
 
         return total1==total2;
     }
+
+    public static String duplicateChars(String str){
+        String duplicateStr="";
+        for(int i=0;i<str.length();i++) {
+            int count = 0;
+            for(int j=i+1;j<str.length();j++){
+               if(str.charAt(i)==str.charAt(j))
+                   count++;
+               if(count>=2 && !duplicateStr.contains(str.charAt(i)+""))
+                   duplicateStr+=str.charAt(i);
+            }
+        }
+
+        return duplicateStr;
+    }
 }

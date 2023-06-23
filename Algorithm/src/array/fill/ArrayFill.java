@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ArrayFill {
 
-    public static void arrayFillRadom(int array[], Random r){
+    public static void arrayFillRandom(int array[], Random r){
         int idx=0;
         for(int a:array){
             a = r.nextInt(1,150);
@@ -13,7 +13,18 @@ public class ArrayFill {
         }
     }
 
-    public static void arrayFillRadom(int array[], Random r,int origin,int bound){
+    public static int[] arrayFillRandom(Random r,int n){
+        int array[] = new int[n];
+        int idx=0;
+        for(int a:array){
+            a = r.nextInt(1,20);
+            array[idx] = a;
+            idx++;
+        }
+        return array;
+    }
+
+    public static void arrayFillRandom(int array[], Random r,int origin,int bound){
         int idx=0;
         for(int a:array){
             a = r.nextInt(origin,bound);

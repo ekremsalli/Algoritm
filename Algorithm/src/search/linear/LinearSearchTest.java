@@ -10,7 +10,7 @@ public class LinearSearchTest {
     public static void main(String[] args) {
         int[] array = new int[50];
         Random r = new Random();
-        ArrayFill.arrayFillRadom(array,r);
+        ArrayFill.arrayFillRandom(array,r);
         ArrayPrint.print(array);
         System.out.println();
         //System.out.println(LinearSearch.linearSearch(array,5));
