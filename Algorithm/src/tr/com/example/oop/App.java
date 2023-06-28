@@ -1,14 +1,11 @@
 package tr.com.example.oop;
 
 import tr.com.example.numeric.fibonacci.Fibonacci;
+import tr.com.example.string.StringUtil;
 
 public class App {
     public static void main(String[] args) {
-        Fibonacci.printFibonacci(20);
-        System.out.println();
-        System.out.println(Fibonacci.getFibonacciNumberByOrder(20));
-
-        System.out.println(Fibonacci.getFibonacciOrderOfNumber(21));
+        System.out.println(StringUtil.splitExample("This-is*not","is","not"));
     }
 }
 

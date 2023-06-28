@@ -136,4 +136,20 @@ public class StringUtil {
 
         return duplicateStr;
     }
+
+    public static boolean splitExample(String str,String firstValue,String secondValue){
+        int frequencyFirst=0;
+        int frequencySecond=0;
+
+        String[] array = str.split("");
+
+        for(int i=0;i<array.length;i++) {
+            if(array[i].equals(firstValue))
+                frequencyFirst++;
+            if(array[i].equals(secondValue))
+                frequencySecond++;
+        }
+
+        return frequencyFirst==frequencySecond;
+    }
 }
