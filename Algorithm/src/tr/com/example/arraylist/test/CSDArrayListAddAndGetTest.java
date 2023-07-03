@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Vector;
 
 import tr.com.example.arraylist.CSDArrayList;
-import org.csystem.util.string.StringUtil;
+
 
 public class CSDArrayListAddAndGetTest {
 	public static void run() {
@@ -28,7 +28,7 @@ public class CSDArrayListAddAndGetTest {
 		for(short i=0;i<22;i++) {
 			shortList.add(i);
 		}
-		
+		/*
 		for(int i=0;i<4;i++) {
 			aList.add(new A(i,StringUtil.getRandomTextEN(5),(short)i));
 		}
@@ -36,7 +36,7 @@ public class CSDArrayListAddAndGetTest {
 		for(int i=0;i<13;i++) {
 			stringList.add(StringUtil.getRandomTextEN(5));
 		}
-		
+		*/
 		System.out.println("Capacity and Size After Using Add Methods");
 		
 		System.out.printf("Capacity:%d Size:%d%n",integerList.capacity(),integerList.size());

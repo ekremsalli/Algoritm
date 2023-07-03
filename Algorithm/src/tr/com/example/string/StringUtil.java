@@ -137,7 +137,7 @@ public class StringUtil {
         return duplicateStr;
     }
 
-    public static boolean splitExample(String str,String firstValue,String secondValue){
+    public static boolean splitCheckEqualityOfStrings(String str,String firstValue,String secondValue){
         int frequencyFirst=0;
         int frequencySecond=0;
 
@@ -153,16 +153,24 @@ public class StringUtil {
         return frequencyFirst==frequencySecond;
     }
 
+    //Aranan String kullanılarak başka bir String oluşturulabiliyorsa düzgün çalışmaz
+    //"is" Stringinin sayısını ararken this Sttringlerinin içindeki is'leri de sayıyor
     public static int numberOfQuentity(String str,String str2){
 
         int indexNumber = 0;
         int occurance = 0;
         for(int i=-1;indexNumber!=-1;i++) {
             indexNumber = str.indexOf(str2, i + 1);
-            if(indexNumber>0)
+            if(indexNumber>=0)
                 occurance++;
+
+            i = indexNumber;
         }
 
         return occurance;
+    }
+
+    public static boolean quentityEquality(String str,String str2,String str3){
+        return numberOfQuentity(str,str2) == numberOfQuentity(str,str3);
     }
 }

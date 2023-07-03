@@ -5,9 +5,9 @@ public class LinearSearch {
 
     public static int linearSearch(int []a,int value){
 
-        for(int i=0;i<a.length;i++)
+        for(int i = 0; i < a.length; i++)
         {
-            if(a[i]==value)
+            if(a[i] == value)
                 return i;
         }
 
