@@ -152,4 +152,17 @@ public class StringUtil {
 
         return frequencyFirst==frequencySecond;
     }
+
+    public static int numberOfQuentity(String str,String str2){
+
+        int indexNumber = 0;
+        int occurance = 0;
+        for(int i=-1;indexNumber!=-1;i++) {
+            indexNumber = str.indexOf(str2, i + 1);
+            if(indexNumber>0)
+                occurance++;
+        }
+
+        return occurance;
+    }
 }
